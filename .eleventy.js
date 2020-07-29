@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig, options = {}) {
             .auto('format')
     })
 
-    eleventyConfig.addShortcode('responsiveImage', (image, srcs="320,640,900", sizes="(min-width: 48em) 48em, 100vw", classList="") => {
+    eleventyConfig.addShortcode('responsiveImage', (image, srcs="320,640,900", sizes="100vw", classList="") => {
         const sizeArray = srcs.split(',');
         const firstSize = sizeArray[0];
         const lastSize = sizeArray[sizeArray.length - 1];
