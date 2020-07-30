@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
 Once this is initialized, you've got access to 3 new shortcodes:
 
 ```twig
-// Get sanity cdn URLs for your image with optional mutations
+// Get sanity cdn URLs for your image with optional transformations
 {% imageUrlFor sanityImageObject, optionalWidthValue %}
 {% croppedUrlFor sanityImageObject, widthValue, heightValue %}
 
