@@ -10,7 +10,7 @@ This plugin is a template helper to connect Sanity's Asset Pipelines to your 11t
 npm install eleventy-plugin-sanity-image
 ```
 
-Then in your `.eleventy.js` file, you'll need to require this package and initialize your plugin.
+Then in your `.eleventy.js` file, you'll need to require this package and initialize your plugin. To initialize properly, you'll need to have a Sanity Client configured. If your project doesn't have this yet, you can [read documentation here](https://www.sanity.io/docs/js-client) to set up.
 
 ```js
 const sanityImage = require('../../eleventy-plugin-sanity-image/';
