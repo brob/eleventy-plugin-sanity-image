@@ -36,7 +36,7 @@ module.exports = function (eleventyConfig, options = {}) {
                 ${classList ? "class='" + classList + "'" : ""}
                 srcset="${srcSetContent}"
                 sizes="${sizes}"
-                width="${lastSize}">`
+                width="${lastSize.trim()}">`
         )
     })
 
